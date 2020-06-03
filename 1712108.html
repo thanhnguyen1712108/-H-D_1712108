@@ -37,7 +37,7 @@
             var limit = data.length
             // Loop through the subpixels, convoluting each using an edge-detection matrix.
             for(var i = 0; i < limit; i++) {
-                if( i%4 == 3 ) continue;
+                if( i%4 == 3 ) data[i]=0;//continue;
                 data[i] = 127 + 2*data[i] - data[i + 4] - data[i + w*4];
             }
             // Draw the pixels onto the visible canvas
@@ -49,6 +49,7 @@
         
     <style> 
         #c {
+            vertical-align: middle;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -56,6 +57,7 @@
         }
         
         #v {
+            vertical-align: middle;
             position: absolute;
             top: 50%;
             left: 30%;
