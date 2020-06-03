@@ -1,1 +1,2 @@
-# -H-D_1712108
+# Bài tập môn họn Đồ họa ứng dụng
+### Nguyễn Thành Nguyên - 1712108
